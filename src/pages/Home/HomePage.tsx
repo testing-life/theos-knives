@@ -4,7 +4,7 @@ import Heading from 'components/common/Heading/Heading';
 import React, { useEffect } from 'react';
 import useFilmsStore from 'stores/films.store';
 import content from '../../data/homepage.json';
-
+import remott from 'https://github.com/testing-life/theos-knives/blob/feature/local-data/src/data/homepage.json';
 const HomePage = () => {
   // const { films, loading, error, fetchFilms } = useFilmsStore();
 
