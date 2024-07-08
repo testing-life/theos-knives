@@ -1,18 +1,27 @@
+import React, { useEffect, useState } from 'react';
 import FilmListItem, { FilmItem } from 'components/FilmListItem/FilmListItem';
 import Spinner from 'components/Spinner/Spinner';
 import Heading from 'components/common/Heading/Heading';
-import React, { useEffect } from 'react';
 import useFilmsStore from 'stores/films.store';
-import content from '../../data/homepage.json';
-import remott from 'https://github.com/testing-life/theos-knives/blob/feature/local-data/src/data/homepage.json';
-const HomePage = () => {
-  // const { films, loading, error, fetchFilms } = useFilmsStore();
+// import content from '../../data/homepage.json';
 
-  // useEffect(() => {
-  //   if (!films.length) {
-  //     fetchFilms();
-  //   }
-  // }, []);
+const HomePage = () => {
+  const [content, setContent] = useState({ title: '', teaser: '' });
+  useEffect(() => {
+    const getHomepageData = async () => {
+      const res = (await fetch(
+        'https://testing-life.github.io/theos-knives/static/data/homepage.json'
+      ).catch((e) => console.log('e', e))) as Response;
+      if (res.ok) {
+        const data = await res.json();
+        console.log(data);
+        setContent(data);
+      }
+    };
+    if (!content.title) {
+      getHomepageData();
+    }
+  }, []);
 
   return (
     <section>
