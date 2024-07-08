@@ -3,6 +3,7 @@ import Spinner from 'components/Spinner/Spinner';
 import Heading from 'components/common/Heading/Heading';
 import React, { useEffect } from 'react';
 import useFilmsStore from 'stores/films.store';
+import content from '../../data/homepage.json';
 
 const HomePage = () => {
   // const { films, loading, error, fetchFilms } = useFilmsStore();
@@ -15,8 +16,8 @@ const HomePage = () => {
 
   return (
     <section>
-      <Heading text="Theo's knives" />
-      <p>This is theos text</p>
+      <Heading text={content.title} />
+      <p>{content.teaser}</p>
       {/* {!loading && !error && films.length ? (
         <ol>
           {films.slice(0, 10).map((film: FilmItem) => (
