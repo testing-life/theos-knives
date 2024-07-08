@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/theos-knives/static/css/main.114be1d1.css",
+    "main.js": "/theos-knives/static/js/main.03f44404.js",
+    "static/js/453.7cabef07.chunk.js": "/theos-knives/static/js/453.7cabef07.chunk.js",
+    "index.html": "/theos-knives/index.html",
+    "main.114be1d1.css.map": "/theos-knives/static/css/main.114be1d1.css.map",
+    "main.03f44404.js.map": "/theos-knives/static/js/main.03f44404.js.map",
+    "453.7cabef07.chunk.js.map": "/theos-knives/static/js/453.7cabef07.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.114be1d1.css",
+    "static/js/main.03f44404.js"
+  ]
+}
