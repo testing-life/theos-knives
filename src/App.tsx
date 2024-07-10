@@ -8,7 +8,7 @@ import { DETAILS, HOME, NOMATCH } from 'consts/routes';
 
 function App() {
   return (
-    <div data-theme='default'>
+    <div>
       <Routes>
         <Route path={HOME} element={<HomePage />} />
         <Route path={DETAILS} element={<DetailsPage />} />
