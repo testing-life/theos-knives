@@ -4,7 +4,6 @@ import Spinner from 'components/Spinner/Spinner';
 import Heading from 'components/common/Heading/Heading';
 import useFilmsStore from 'stores/films.store';
 import Placeholder from 'components/Placeholder/Placeholder';
-// import content from '../../data/homepage.json';
 
 const HomePage = () => {
   const [content, setContent] = useState({ title: '', teaser: '' });

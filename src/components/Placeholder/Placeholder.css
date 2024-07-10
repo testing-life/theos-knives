@@ -1,5 +1,6 @@
 .placeholder {
   block-size: 100vh;
+  text-shadow: 0 1px black;
 }
 
 .placeholder__bg {
@@ -7,10 +8,27 @@
   width: 100%;
   height: 100%;
   z-index: -1;
+  inset-block-start: 0;
 }
 
 .placeholder__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.placeholder__logo {
+  max-inline-size: 200px;
+  margin: 0 auto;
+}
+
+.placeholder__para {
+  padding: 0 20px;
+}
+
+.placeholder__header {
+  text-align: center;
+  font-weight: 600;
+  padding: 20px 0 0;
+  font-size: var(--h1-font-size);
 }

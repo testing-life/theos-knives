@@ -2,6 +2,7 @@ import React, { FC } from 'react';
 import bgLg from '../../assets/theoBgLg.jpg';
 import bgMd from '../../assets/theoBgMd.jpg';
 import bgSm from '../../assets/theoBgSm.jpg';
+import logo from '../../assets/logo.png';
 import './Placeholder.css';
 
 interface Props {
@@ -23,18 +24,24 @@ const Placeholder: FC<Props> = ({ content }) => {
   };
   return (
     <section className='placeholder'>
+      <header className='placeholder__header'>
+        <img src={logo} alt='' className='placeholder__logo' />
+        <h1>{content.title}</h1>
+      </header>
+      <p className='placeholder__para'>
+        {content.teaser}
+        <a
+          className='placeholder__link'
+          href={`mailto:${decodeBase64(emailString)}`}
+        >
+          {decodeBase64(emailString)}
+        </a>
+      </p>
       <picture className='placeholder__bg'>
         <source srcSet={bgLg} media='(min-width: 1024px)' />
         <source srcSet={bgMd} media='(min-width: 700px)' />
         <img src={bgSm} alt='' className='placeholder__img' />
       </picture>
-      <p>Knives by the coming up shortly</p>
-      <p>
-        Get in touch:{' '}
-        <a href={`mailto:${decodeBase64(emailString)}`}>
-          {decodeBase64(emailString)}
-        </a>
-      </p>
     </section>
   );
 };
