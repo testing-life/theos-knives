@@ -1,12 +1,11 @@
 .placeholder {
   text-shadow: 1px 1px black;
-  position: relative;
 }
 
 .placeholder__bg {
   position: absolute;
   width: 100%;
-  height: 110%;
+  height: 100%;
   z-index: -1;
   inset-block-start: 0;
 }
