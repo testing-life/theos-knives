@@ -11,7 +11,7 @@ const HomePage = () => {
   useEffect(() => {
     const getHomepageData = async () => {
       const res = (await fetch(
-        'https://testing-life.github.io/theos-knives/data/homepage.json'
+        'https://testing-life.github.io/theos-knives/data/placeholder.json'
       ).catch((e) => console.log('e', e))) as Response;
       if (res.ok) {
         const data = await res.json();
