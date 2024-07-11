@@ -33,13 +33,12 @@
 [data-theme='transparent'] {
   --page-background: transparent;
   --text-colour: var(--natural-choice);
-  --h1-font-size: var(--font-size-3);
+  --h1-font-size: var(--font-size-4);
   --link-colour: var(--june-bud);
   padding: 0;
   max-inline-size: none;
   font-size: var(--font-size-1);
   @media (min-width: 77.8rem) {
-    --h1-font-size: var(--font-size-4);
     font-size: var(--font-size-2);
   }
 }

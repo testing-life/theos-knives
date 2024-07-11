@@ -28,15 +28,12 @@ const Placeholder: FC<Props> = ({ content }) => {
         <img src={logo} alt='' className='placeholder__logo' />
         <h1>{content.title}</h1>
       </header>
-      <p className='placeholder__para'>
-        {content.teaser}
-        <a
-          className='placeholder__link'
-          href={`mailto:${decodeBase64(emailString)}`}
-        >
+      <p className='placeholder__para'>{content.teaser} </p>
+      <div className='placeholder__link'>
+        <a href={`mailto:${decodeBase64(emailString)}`}>
           {decodeBase64(emailString)}
         </a>
-      </p>
+      </div>
       <picture className='placeholder__bg'>
         <source srcSet={bgLg} media='(min-width: 1024px)' />
         <source srcSet={bgMd} media='(min-width: 700px)' />
