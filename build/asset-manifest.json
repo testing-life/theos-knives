@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/theos-knives/static/css/main.70a49db7.css",
-    "main.js": "/theos-knives/static/js/main.3184efe8.js",
+    "main.js": "/theos-knives/static/js/main.d3b6c1e3.js",
     "static/js/453.7cabef07.chunk.js": "/theos-knives/static/js/453.7cabef07.chunk.js",
     "static/media/theoBgLg.jpg": "/theos-knives/static/media/theoBgLg.a8eae1325d3ca140f81f.jpg",
     "static/media/logo.png": "/theos-knives/static/media/logo.3e65b419c94e2c8a34bf.png",
@@ -9,11 +9,11 @@
     "static/media/theoBgSm.jpg": "/theos-knives/static/media/theoBgSm.3d3d8c354685f1d266f3.jpg",
     "index.html": "/theos-knives/index.html",
     "main.70a49db7.css.map": "/theos-knives/static/css/main.70a49db7.css.map",
-    "main.3184efe8.js.map": "/theos-knives/static/js/main.3184efe8.js.map",
+    "main.d3b6c1e3.js.map": "/theos-knives/static/js/main.d3b6c1e3.js.map",
     "453.7cabef07.chunk.js.map": "/theos-knives/static/js/453.7cabef07.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.70a49db7.css",
-    "static/js/main.3184efe8.js"
+    "static/js/main.d3b6c1e3.js"
   ]
 }
