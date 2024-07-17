@@ -3,6 +3,7 @@ import bgLg from '../../assets/theoBgLg.jpg';
 import bgMd from '../../assets/theoBgMd.jpg';
 import bgSm from '../../assets/theoBgSm.jpg';
 import logo from '../../assets/logo.png';
+import logo_framed from '../../assets/Print_w_frame_inverted.png';
 import './Placeholder.css';
 
 interface Props {
@@ -25,7 +26,7 @@ const Placeholder: FC<Props> = ({ content }) => {
   return (
     <section className='placeholder'>
       <header className='placeholder__header'>
-        <img src={logo} alt='' className='placeholder__logo' />
+        <img src={logo_framed} alt='' className='placeholder__logo' />
         <h1>{content.title}</h1>
       </header>
       <p className='placeholder__para'>{content.teaser} </p>
